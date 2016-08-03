@@ -34,13 +34,7 @@ $i=0;
 $j = json_decode(file_get_contents("users/$u"));
 $r =(makeHTTPRequest("sendMessage",[
 'chat_id'=>$j->id,
-'text'=>"❗️  ربات بفروش می رسد ( درصورت نبود تقاضا منحل می شود )
-
-سورس این ربات بزودی کامل در گیت هاب قرار میگیرد و این ربات به همراه شناسه و اطلاعات قبلی به فروش می رسد .
-
-جهت سوالات بیشتر با @ssc_support تماس بگیرید.
-
-https://telegram.me/joinchat/BdES-zwJKKGeFT8434LVsQ",
+'text'=>"خوش آمدید به ربات دکمه شیشه ای ",
 'parse_mode'=>'HTML'
 ]));
 
