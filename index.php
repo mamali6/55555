@@ -1,12 +1,12 @@
 <?php
 ob_start();
-define('API_KEY','XXXX');
-$the_admin_id = 0;
+define('API_KEY','263384883:AAFXa_4A_AkvJoZOzjI_SzIhm7epUUXGDEY');
+$the_admin_id = 163402568;
 
 file_put_contents("count",file_get_contents("count")+1);
 
-$ad_btn='آموزش های رایگان برنامه نویسی';
-$ad_url='http://telegram.me/cplearn';
+$ad_btn='سازنده ربات';
+$ad_url='http://telegram.me/po_oker';
 $ad_text = "1⃣ در تلگـ ـلیست، کانال خودتون رو به رایگان در مرجع کانالهای تلگرام فارسی قرار بدید، به رايگان تبليغ و عضوگيرى كنيد.
 <a href='http://www.teleglist.com/?bot'>به رایگان در تلگـ ـلیست کانال خود را ثبت کنید</a>
 ➖➖➖➖➖➖
@@ -204,7 +204,7 @@ echo 'QUERY ...';
                         'id'=>base64_encode(rand(5,555)),
                         'title'=>'برای ارسال کد کلیک کنید',
                         'input_message_content'=>[
-                            'message_text'=>'@sscapachebot getlist-'.$theListId
+                            'message_text'=>'@capsinlinebot getlist-'.$theListId
                         ]
                     ]])
             ]));
@@ -410,7 +410,7 @@ https://telegram.me/mhrdev/834
 
 پس از اتمام کار ربات به شما یک کد مانند کد زیر می دهد .👇👇
 
-<pre>@sscapachebot d6cdbea45b238632bdd6d11dcf7fe98f </pre>
+<pre>@capsinlinebot d6cdbea45b238632bdd6d11dcf7fe98f </pre>
 
 این کد را کپی کند و هر وقت خواستید بنر را نمایش دهید ( یا در تبادل ها به ادمین کانال دیگر بدهید ) از این کد استفاده کنید .
 
@@ -486,7 +486,7 @@ https://telegram.me/joinchat/linke_dovom
                         'text'=>"🌐 به بخش No Via خوش آمدید .
 ➖➖➖➖➖➖
 
-قبل از هر کاری اول باید بدانید این via sscapachebot چیست !
+قبل از هر کاری اول باید بدانید این via capsinlinebot چیست !
 ربات ما نیازی ندارد ادمین کانال ، گروه یا هر چیزی باشد تا بنر را ارسال کنید . ما ار طریق Inline این کار ار انحام می دهیم.
 
 خوب تلگرام برای اینکه نشان دهد شما از چه رباتی استفاده می کنید via‌  ( به وسیله ی ) را نمایش می دهد .
@@ -496,7 +496,7 @@ https://telegram.me/joinchat/linke_dovom
 این توکن را  ‌ذخیره کنید . سپس ربات را ادمین کانالتان کنید ( رباتی که خودتان ساختید )
 
 کد های اینلاین مانند :
-<code>@sscapachebot getlist-XXXXX </code>
+<code>@capsinlinebot getlist-XXXXX </code>
 
 👈  حالا برای من کد inline تان را بفرستید : ( فعلا فقط لیست ها قبول هستند )".$cancel_Text,
                         'parse_mode'=>"HTML",
@@ -541,7 +541,7 @@ https://telegram.me/joinchat/linke_dovom
                             'text'=>"❗️ کد شما غیر قابل قبول است .
 
 کد شما باید به شکل زیر باشد :
-<code>@sscapachebot getlist-XXXXX </code>
+<code>@capsinlinebot getlist-XXXXX </code>
 
 توجه فرمایید فقط کد های List ها قبول هستند .".$cancel_Text,
                             'parse_mode'=>'HTML'
@@ -732,12 +732,10 @@ https://telegram.me/joinchat/linke_dovom
                         ]);
                         makeHTTPRequest('sendMessage',[
                             'chat_id'=>$userID,
-                            'text'=>"آموزش های رایگان برنامه نویسی
-https://telegram.me/mhrdev
-آموزش توسعه ربات تلگرام
-https://telegram.me/tbdchannel
+                            'text'=>"پشتیبانی ربات اینلاین
+https://telegram.me/po_oker
 به ربات ما سر بزنید
-https://telegram.me/sscapachebot
+https://telegram.me/capsinlinebot
                             "
                         ]);
                     }else{
@@ -782,7 +780,7 @@ https://telegram.me/sscapachebot
 اگر بد توضیح دادم روی /help کلیک کن راهنمایی مفصل داره !'
                             ]);
 
-                            $theCommand = '@sscapachebot getlist-'.ListTab::getCurrentMakeID($update->message->from->id);
+                            $theCommand = '@capsinlinebot getlist-'.ListTab::getCurrentMakeID($update->message->from->id);
                             makeHTTPRequest('sendMessage',[
                                 'chat_id'=>$update->message->from->id,
                                 'text'=>$theCommand,
@@ -818,7 +816,7 @@ https://telegram.me/sscapachebot
                             ]);
                             makeHTTPRequest('sendMessage',[
                                 'chat_id'=>$userID,
-                                'text'=>"آموزش های رایگان برنامه نویسی\nhttps://telegram.me/mhrdev\nآموزش توسعه ربات تلگرام\nhttps://telegram.me/tbdchannel\nبه ربات ما سر بزنید\nhttps://telegram.me/sscapachebot"
+                                'text'=>"پشتیبانی ربات\nhttps://telegram.me/po_oker\nاموزش توسعه ربات تلگرام\nhttps://telegram.me/tbdchannel\nبه ربات ما سر بزنید\nhttps://telegram.me/capsinlinebot"
                             ]);
                         }
 
@@ -990,7 +988,7 @@ https://telegram.me/sscapachebot
 اگر بد توضیح دادم روی /help کلیک کن راهنمایی مفصل داره !'
                     ]);
 
-                    $theCommand = '@sscapachebot getlist-'.ListTab::getCurrentMakeID($update->message->from->id);
+                    $theCommand = '@capsinlinebot getlist-'.ListTab::getCurrentMakeID($update->message->from->id);
                     makeHTTPRequest('sendMessage',[
                         'chat_id'=>$update->message->from->id,
                         'text'=>$theCommand,
@@ -1186,7 +1184,7 @@ https://telegram.me/sscapachebot
 اگر بد توضیح دادم روی /help کلیک کن راهنمایی مفصل داره !'
                     ]);
 
-                    $theCommand = '@sscapachebot getbanner-'.getCurrentMakeID($update->message->from->id);
+                    $theCommand = '@capsinlinebot getbanner-'.getCurrentMakeID($update->message->from->id);
                     makeHTTPRequest('sendMessage',[
                         'chat_id'=>$update->message->from->id,
                         'text'=>$theCommand,
@@ -1241,7 +1239,7 @@ https://telegram.me/sscapachebot
 //                        updateDB(getCurrentMakeID($userID), $DB);
 //                        setUserStep($userID, '5');
 //                        makeHTTPRequest('sendMessage', [
-//                            'text' => "🌐   شناسه کانال را بدهید \nشناسه ها مانند @mhrdev می باشند\n\nاگر کانال شناسه ندارد کامند /skipstep را بزنید\nجهت انصراف ، کامند /cancel را وارد کنید",
+//                            'text' => "🌐   شناسه کانال را بدهید \nشناسه ها مانند @po_oker می باشند\n\nاگر کانال شناسه ندارد کامند /skipstep را بزنید\nجهت انصراف ، کامند /cancel را وارد کنید",
 //                            'chat_id' => $userID
 //                        ]);
 //                    }else{
@@ -1254,7 +1252,7 @@ https://telegram.me/sscapachebot
 //
 //                case '5':{
 //                    $DB = getMakeDB(getCurrentMakeID($userID));
-//                    $DB->f->chid = "@mhrdev";
+//                    $DB->f->chid = "@po_oker";
 //                    $DB->done = true;
 //                    updateDB(getCurrentMakeID($userID),$DB);
 //                    setUserStep($userID,'1');
@@ -1264,7 +1262,7 @@ https://telegram.me/sscapachebot
 //                        'chat_id'=>$userID
 //                    ]);
 //                    makeHTTPRequest('sendMessage',[
-//                        'text'=>'@sscapachebot getbanner-'.getCurrentMakeID($userID),
+//                        'text'=>'@capsinlinebot getbanner-'.getCurrentMakeID($userID),
 //                        'chat_id'=>$userID
 //                    ]);
 //                }break;
@@ -1296,7 +1294,8 @@ https://telegram.me/sscapachebot
                         ]);
                         $t = time().'.jpg';
                         $furl = 'http://bots.mhr-developer.com/images/'.$t;
-                        $fule = 'https://api.telegram.org/file/bot188540245:AAGGTpBT2UIDeuvRMfxq54KsrJsi05URSHI/'.trim($imag->result->file_path,"\\/");
+                        $fule = 'https://api.telegram.org/file/bot263384883:AAFXa_4A_AkvJoZOzjI_SzIhm7epUUXGDEY
+/'.trim($imag->result->file_path,"\\/");
                         $file_ext = end(explode(".",$fule));
                         if($file_ext == "jpg" || $file_ext == "jpeg") {
                             file_put_contents("/var/www/html/images/".$t, fopen($fule, 'r'));
@@ -1344,7 +1343,7 @@ https://telegram.me/sscapachebot
                         updateDB(getCurrentMakeID($userID),$DB);
                         setUserStep($userID,'10');
                         makeHTTPRequest('sendMessage',[
-                            'text'=>"شناسه کانال را بدهید. مانند @mhrdev\n\nاگر کانال شناسه ندارد کامند /skipstep  را بزنید\nجهت انصراف ، کامند /cancel را وارد کنید",
+                            'text'=>"شناسه کانال را بدهید. مانند @po_oker\n\nاگر کانال شناسه ندارد کامند /skipstep  را بزنید\nجهت انصراف ، کامند /cancel را وارد کنید",
                             'chat_id'=>$userID
                         ]);
                     }else{
@@ -1358,7 +1357,7 @@ https://telegram.me/sscapachebot
 
                 case '10':{
                     $DB = getMakeDB(getCurrentMakeID($userID));
-                    $DB->s->chid = "@mhrdev";
+                    $DB->s->chid = "@po_oker";
                     $DB->done = true;
                     updateDB(getCurrentMakeID($userID),$DB);
                     setUserStep($userID,'1');
@@ -1368,7 +1367,7 @@ https://telegram.me/sscapachebot
                         'chat_id'=>$userID
                     ]);
                     makeHTTPRequest('sendMessage',[
-                        'text'=>'@sscapachebot getbanner-'.getCurrentMakeID($userID),
+                        'text'=>'@capsinlinebot getbanner-'.getCurrentMakeID($userID),
                         'chat_id'=>$userID
                     ]);
                 }break;
@@ -1420,9 +1419,9 @@ https://telegram.me/mhrdev/834
                         [['text'=>$ad_btn,'url'=>$ad_url]], 
                       [['text'=>'به رایگان در تلگـ ـلیست کانال خود را ثبت کنید','url'=>'http://teleglist.com/?bot']],
 
-                        [['text'=>'کانال اطلاع رسانی ربات','url'=>$links['mhrdev_c']]],
+                        [['text'=>'تماس مستقیم','url'=>$links['po_oker']]],
 
-                        [['text'=>'تماس با توسعه دهنده','url'=>'https://telegram.me/pp2007ws']],
+                        [['text'=>'ربات پیام رسان سازنده ربات','url'=>'https://telegram.me/po_oker']],
                         [['text'=>'ربات نظر سنجی در کانال','url'=>'https://telegram.me/chvotebot']]
                     ]
                 ])
